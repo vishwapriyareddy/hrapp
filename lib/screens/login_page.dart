@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:hr_app/palatte.dart';
-
 import '../widgets/widgets.dart';
 
 class LoginPage extends StatelessWidget {
+  static const String id = "login-screen";
   const LoginPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        const BackgroundImage(),
+         BackgroundImage(assetimage: 'assets/images/teacher.jpeg', colors1: Colors.black12, colors2: Colors.black54,),
         Scaffold(
-          appBar: AppBar(),
+         // appBar: AppBar(),
           backgroundColor: Colors.transparent,
           body: SafeArea(
             child: SingleChildScrollView(
@@ -23,7 +23,7 @@ class LoginPage extends StatelessWidget {
                     height: 150,
                     child: Center(
                       child: Text(
-                        'LOGO',
+                        'Sign In',
                         style: kHeading,
                       ),
                     ),

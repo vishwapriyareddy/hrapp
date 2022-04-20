@@ -1,7 +1,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.hr_app">
+       <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"></uses-permission>
+     <uses-permission android:name="android.permission.INTERNET" />
    <application
-        android:label="hr_app"
+        android:label="VBS"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
@@ -19,6 +23,7 @@
             <meta-data
               android:name="io.flutter.embedding.android.NormalTheme"
               android:resource="@style/NormalTheme"
+              android:usesCleartextTraffic="true"
               />
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
